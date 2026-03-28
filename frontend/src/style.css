@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #F8FAFC;
+  color: #111827;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: white;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #4F46E5;
+  font-weight: 500;
+}
+
+.container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.subtitle {
+  color: #6B7280;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.primary {
+  background: #4F46E5;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.secondary {
+  background: #22C55E;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.flow {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #E5E7EB;
+}
+
+.camera {
+  width: 400px;
+  height: 300px;
+  background: #E5E7EB;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

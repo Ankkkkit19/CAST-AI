@@ -1,0 +1,122 @@
+.alphabet-learner { padding: var(--sp-12) 0 var(--sp-24); }
+.alphabet__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-6);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-8);
+}
+.alphabet__title { font-size: var(--fs-3xl); font-weight: 800; }
+.alphabet__subtitle { font-size: var(--fs-lg); color: var(--clr-text-2); margin-top: var(--sp-2); }
+.alphabet__main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--sp-8);
+  margin-bottom: var(--sp-12);
+}
+@media (max-width: 768px) { .alphabet__main { grid-template-columns: 1fr; } }
+.alphabet__display {
+  padding: var(--sp-8);
+  text-align: center;
+}
+.alphabet__letter-big {
+  font-size: 8rem;
+  font-weight: 800;
+  background: var(--grad-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+.alphabet__letter-big.animate-in { animation: fadeInUp 0.4s ease; }
+.alphabet__letter-spoken {
+  margin-top: var(--sp-4);
+  font-size: var(--fs-sm);
+  color: var(--clr-text-2);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.alphabet__explanation { padding: var(--sp-6); }
+.alphabet__exp-header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-4);
+}
+.alphabet__exp-icon { font-size: 1.5rem; }
+.alphabet__exp-label { font-weight: 600; font-size: var(--fs-lg); }
+.alphabet__exp-content { min-height: 120px; }
+.alphabet__exp-content.animate-in { animation: fadeInUp 0.4s ease; }
+.alphabet__exp-nav { margin-top: var(--sp-4); }
+.alphabet__grid-section { margin-bottom: var(--sp-8); }
+.alphabet__grid-label { font-size: var(--fs-sm); color: var(--clr-text-2); margin-bottom: var(--sp-3); }
+.alphabet__grid {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: var(--sp-2);
+}
+@media (max-width: 768px) { .alphabet__grid { grid-template-columns: repeat(7, 1fr); } }
+.alphabet__cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: var(--fs-lg);
+  border-radius: var(--r-md);
+  border: 1px solid var(--clr-border);
+  background: var(--clr-bg-card);
+  color: var(--clr-text-1);
+  cursor: pointer;
+  transition: all var(--tr-fast);
+}
+.alphabet__cell:hover { border-color: var(--clr-accent-1); background: rgba(124,106,247,0.12); }
+.alphabet__cell.active {
+  background: var(--grad-accent);
+  color: #fff;
+  border-color: transparent;
+}
+.alphabet__cell.done {
+  background: rgba(52, 211, 153, 0.2);
+  border-color: var(--clr-accent-3);
+}
+.alphabet__step-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-4) var(--sp-6);
+  margin-bottom: var(--sp-6);
+}
+.alphabet__step-label { font-weight: 600; font-size: var(--fs-md); }
+.alphabet__step-buttons { display: flex; gap: var(--sp-2); }
+.alphabet__progress { margin-top: var(--sp-8); }
+.alphabet__progress-text { font-size: var(--fs-sm); color: var(--clr-text-2); margin-top: var(--sp-2); }
+.alphabet__visual-card, .alphabet__story-card, .alphabet__practice-card { padding: var(--sp-4); }
+.alphabet__visual-demo { font-size: 2rem; margin-bottom: var(--sp-4); }
+.alphabet__steps { padding-left: var(--sp-6); margin: var(--sp-4) 0; }
+.alphabet__step { margin-bottom: var(--sp-2); color: var(--clr-text-2); }
+.alphabet__tip { font-size: var(--fs-sm); color: var(--clr-accent-2); margin-top: var(--sp-4); padding: var(--sp-2); background: rgba(56,189,248,0.1); border-radius: var(--r-md); }
+.alphabet__story-emoji { font-size: 2rem; margin-bottom: var(--sp-2); }
+.alphabet__story-text { color: var(--clr-text-2); line-height: 1.7; }
+.alphabet__practice-steps { display: flex; flex-direction: column; gap: var(--sp-3); }
+.alphabet__practice-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+}
+.alphabet__step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--grad-accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: var(--fs-xs);
+  flex-shrink: 0;
+}
+.alphabet__step-text { color: var(--clr-text-2); }

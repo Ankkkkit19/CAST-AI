@@ -1,0 +1,111 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-peach) 0%, var(--bg-cyan) 100%);
+  padding: 2rem;
+}
+
+.auth-page__container {
+  max-width: 500px;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.45);
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-page__back {
+  align-self: flex-start;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.auth-page__title {
+  font-family: 'Lexend', sans-serif;
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.auth-page__subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.auth-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-form__group label {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.auth-form__group input {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  transition: all 0.2s ease;
+}
+
+.auth-form__group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(124, 106, 247, 0.1);
+}
+
+.auth-form__error {
+  background: #fef2f2;
+  color: #ef4444;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #fca5a5;
+}
+
+.auth-submit {
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.auth-page__toggle {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.auth-page__toggle .btn-link {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-family: 'Lexend', sans-serif;
+}
+
+.auth-page__toggle .btn-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+{
+    "name": "verdent-root",
+    "version": "1.0.0",
+    "description": "Verdent Fullstack Application",
+    "scripts": {
+        "install:all": "cd frontend && npm install && cd ../backend && ../.venv/bin/python -m pip install -r requirements.txt",
+        "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+        "start:frontend": "cd frontend && npm run dev",
+        "start:backend": "cd backend && ../.venv/bin/python app.py"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+        "firebase": "^12.11.0",
+        "framer-motion": "^12.36.0"
+    }
+}

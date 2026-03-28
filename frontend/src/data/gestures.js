@@ -1,0 +1,78 @@
+export const GESTURE_DICTIONARY = [
+  // Thumb TUCKED
+  { code: "TUCKED-0000", emoji: "✊", phrase: "I am completely focused." },
+  { code: "TUCKED-1000", emoji: "☝️", phrase: "Please wait a moment for me." },
+  { code: "TUCKED-0100", emoji: "🖕", phrase: "Please stop doing that immediately." }, // Non-profane interpretation
+  { code: "TUCKED-0010", emoji: "💍", phrase: "I am already taken." },
+  { code: "TUCKED-0001", emoji: "🤞", phrase: "I promise you it's the truth." },
+  { code: "TUCKED-1100", emoji: "✌️", phrase: "Peace and good vibes to you." },
+  { code: "TUCKED-1010", emoji: "🤏", phrase: "I just need a little bit." },
+  { code: "TUCKED-1001", emoji: "🤘", phrase: "This is completely awesome!" },
+  { code: "TUCKED-0110", emoji: "👇", phrase: "Look down there." },
+  { code: "TUCKED-0101", emoji: "👉", phrase: "That one over there." },
+  { code: "TUCKED-0011", emoji: "🎶", phrase: "I'm listening to the music." },
+  { code: "TUCKED-1110", emoji: "✋", phrase: "I need three items." },
+  { code: "TUCKED-1101", emoji: "🤟", phrase: "I really like this." },
+  { code: "TUCKED-1011", emoji: "🖐", phrase: "I need to take a break." },
+  { code: "TUCKED-0111", emoji: "🤏", phrase: "Just a tiny fraction." },
+  { code: "TUCKED-1111", emoji: "✋", phrase: "Please stop right there." },
+
+  // Thumb OUT
+  { code: "OUT-0000", emoji: "👍", phrase: "I don't know what to do." }, // sideways thumb
+  { code: "OUT-1000", emoji: "👆", phrase: "I don't agree with this." }, // L-shape
+  { code: "OUT-0100", emoji: "👉", phrase: "He is the one." },
+  { code: "OUT-0010", emoji: "👉", phrase: "She is the one." },
+  { code: "OUT-0001", emoji: "🤙", phrase: "Please call me later." },
+  { code: "OUT-1100", emoji: "👀", phrase: "Look over there at that." },
+  { code: "OUT-1010", emoji: "🖖", phrase: "Live long and prosper." },
+  { code: "OUT-1001", emoji: "🤟", phrase: "I love you very much!" },
+  { code: "OUT-0110", emoji: "🤌", phrase: "What are you trying to say?" },
+  { code: "OUT-0101", emoji: "💅", phrase: "I am feeling confident." },
+  { code: "OUT-0011", emoji: "👈", phrase: "They went that way." },
+  { code: "OUT-1110", emoji: "🖐", phrase: "I need four of these." },
+  { code: "OUT-1101", emoji: "🤙", phrase: "That is totally radical." },
+  { code: "OUT-1011", emoji: "👋", phrase: "I have a quick question." },
+  { code: "OUT-0111", emoji: "🫱", phrase: "Welcome, come on in." },
+  { code: "OUT-1111", emoji: "👋", phrase: "Hello, how are you doing today?" },
+
+  // Thumb UP
+  { code: "UP-0000", emoji: "👍", phrase: "I completely understand you." },
+  { code: "UP-1000", emoji: "👍", phrase: "Excellent point!" },
+  { code: "UP-0100", emoji: "👍", phrase: "You are totally right." },
+  { code: "UP-0010", emoji: "👍", phrase: "I'm doing well." },
+  { code: "UP-0001", emoji: "👍", phrase: "Let's drink to that." },
+  { code: "UP-1100", emoji: "👍", phrase: "Superb job!" },
+  { code: "UP-1010", emoji: "👍", phrase: "I'm very impressed." },
+  { code: "UP-1001", emoji: "🤟", phrase: "Awesome vibes." },
+  { code: "UP-0110", emoji: "👍", phrase: "Fantastic idea." },
+  { code: "UP-0101", emoji: "👍", phrase: "Looking good." },
+  { code: "UP-0011", emoji: "👍", phrase: "Keep up the good work." },
+  { code: "UP-1110", emoji: "👍", phrase: "Almost perfect." },
+  { code: "UP-1101", emoji: "👍", phrase: "Very cool." },
+  { code: "UP-1011", emoji: "👍", phrase: "I agree absolutely." },
+  { code: "UP-0111", emoji: "👍", phrase: "Got it, no problem." },
+  { code: "UP-1111", emoji: "🖐", phrase: "High five!" },
+
+  // Thumb DOWN
+  { code: "DOWN-0000", emoji: "👎", phrase: "I do not understand what you mean." },
+  { code: "DOWN-1000", emoji: "👎", phrase: "That is a bad idea." },
+  { code: "DOWN-0100", emoji: "👎", phrase: "I don't like this." },
+  { code: "DOWN-0010", emoji: "👎", phrase: "This feels wrong." },
+  { code: "DOWN-0001", emoji: "👎", phrase: "I refuse to do this." },
+  { code: "DOWN-1100", emoji: "👎", phrase: "Absolutely not." },
+  { code: "DOWN-1010", emoji: "👎", phrase: "No way." },
+  { code: "DOWN-1001", emoji: "👎", phrase: "I'm completely exhausted." },
+  { code: "DOWN-0110", emoji: "👎", phrase: "That's terrible." },
+  { code: "DOWN-0101", emoji: "👎", phrase: "I disagree." },
+  { code: "DOWN-0011", emoji: "👎", phrase: "Stop this immediately." },
+  { code: "DOWN-1110", emoji: "👎", phrase: "I am feeling sick." },
+  { code: "DOWN-1101", emoji: "👎", phrase: "This is unacceptable." },
+  { code: "DOWN-1011", emoji: "👎", phrase: "I have no idea." },
+  { code: "DOWN-0111", emoji: "👎", phrase: "Please reconsider." },
+  { code: "DOWN-1111", emoji: "👎", phrase: "I fail to see the point." },
+
+  // Special Distance-based (These are identified by text matching rather than code in the main map)
+  { code: "SPECIAL-OK", emoji: "👌", phrase: "Everything is absolutely perfect!" },
+  { code: "SPECIAL-MONEY", emoji: "💸", phrase: "How much does this cost?" },
+  { code: "SPECIAL-PINCH", emoji: "🤏", phrase: "Can I have a little bit?" },
+];
