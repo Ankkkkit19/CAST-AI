@@ -12,7 +12,6 @@ build/
 # Virtual environments
 .venv/
 venv/
-env/
 
 # Models (optionally tracked — remove line below to include q_table.json)
 # models/
