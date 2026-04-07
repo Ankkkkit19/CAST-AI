@@ -1,0 +1,69 @@
+# ────────────────────────────────────────────────────
+#  CAST OpenEnv Configuration
+#  Adaptive Sign Language Interpretation via RL
+# ────────────────────────────────────────────────────
+
+project:
+  name: "CAST-OpenEnv"
+  version: "1.0.0"
+  description: "Adaptive Sign Language RL Agent"
+
+# Environment settings
+env:
+  max_steps: 20           # steps per episode
+  seed: 42                # for reproducibility
+
+# State space
+state:
+  gestures:  ["hello", "stop", "help", "danger"]
+  noise:     ["low", "medium", "high"]
+  contexts:  ["classroom", "road", "home"]
+  emergency_gestures: ["help", "danger"]
+
+# Action space
+actions:
+  - show_text       # 0: display interpreted text
+  - ask_repeat      # 1: request clarification
+  - trigger_alert   # 2: fire emergency alert
+
+# Reward shaping
+rewards:
+  correct_interpretation:    1.0
+  wrong_interpretation:     -1.0
+  emergency_correctly_handled: 2.0
+  fast_response:             0.5
+
+# Q-Learning hyperparameters
+agent:
+  type: "q_learning"       # options: random | q_learning | dqn
+  alpha: 0.1               # learning rate
+  gamma: 0.95              # discount factor
+  epsilon: 1.0             # initial exploration rate
+  epsilon_min: 0.05        # minimum exploration rate
+  epsilon_decay: 0.995     # decay per step
+  seed: 42
+
+# Training settings
+training:
+  episodes: 1000
+  log_interval: 100        # print stats every N episodes
+  save_path: "models/q_table.json"
+  reward_window: 50        # rolling average window
+
+# Demo settings
+demo:
+  episodes: 5
+  use_greedy: true         # disable exploration during demo
+  scenarios:
+    - gesture: "help"
+      noise: "high"
+      context: "road"
+    - gesture: "hello"
+      noise: "low"
+      context: "classroom"
+    - gesture: "danger"
+      noise: "medium"
+      context: "home"
+    - gesture: "stop"
+      noise: "high"
+      context: "classroom"
